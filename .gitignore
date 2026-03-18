@@ -1,4 +1,7 @@
-assets/
 __pycache__/
-.ipc
+assets/*
+staticfiles/
+.venv/
+.logs/
 .processes.json
+.ipc
