@@ -300,12 +300,6 @@ DJANGO_SIDE_URLS: list[str] = [
 ]
 
 
-# The base domain used to build shortened URLs shown to users.
-# Change this to your real domain before deploying.
-# Example: "https://snip.io"
-SHORT_URL_BASE_DOMAIN: str = "http://localhost:8000"
-
-
 # SESSION SETTINGS
 # This class is used for storing session data. Available cache classes include:
 # - duck.utils.caching.InMemoryCache
