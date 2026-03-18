@@ -17,7 +17,7 @@ from duck.settings import SETTINGS
 #   PORT         — The port the server listens on. Deployment platforms often
 #                           assign this automatically via an environment variable.
 
-DEBUG  = os.getenv("DEBUG", True)
+DEBUG  = bool(os.getenv("DEBUG", True))
 PORT   = int(os.getenv("PORT") or 8000)
 DOMAIN = os.getenv("DOMAIN", "localhost")
 
