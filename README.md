@@ -199,17 +199,15 @@ The stats bar at the top shows total links shortened and total clicks across all
 
 ---
 
-## Changing the base domain
+## DEPLOYMENT
 
 Right now short URLs look like `http://localhost:8000/s/aB3xZ9`.
 
-When you deploy this to a real server, update the app domain `web/main.py`:
+When you deploy this to a real server, update the environment variable like `DEBUG`, `DOMAIN` & `PORT`.  
 
-Change it to your real domain, for example:
+By default, the `web/main.py` is dynamic, meaning, it can run in production environments. To enter production mode, just set the environment variable `DEBUG` to nothing. 
 
-```python
-app = App(port=8000, addr="0.0.0.0", domain="mydomain.com")
-```
+> Use file `deploy.sh` for easy deployment.
 
 > **Note:** In this project the base URL is actually resolved dynamically using `resolve("home")` in `shorten_form.py`. If you need to override the domain explicitly, update the `handle_shorten` method in `web/ui/components/shorten_form.py`.
 
