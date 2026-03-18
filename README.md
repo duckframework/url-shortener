@@ -3,6 +3,8 @@
 > A beginner-friendly URL shortener built with **Duck Framework**.  
 > Pure Python. No JavaScript. Real-time UI powered by Lively.
 
+**[▶ Try the Live Demo](https://snip-f7eb7528a803.herokuapp.com/)**
+
 ---
 
 ## What is this?
