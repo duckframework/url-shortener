@@ -5,3 +5,4 @@ staticfiles/
 .logs/
 .processes.json
 .ipc
+web/backend/django/duckapp/db.sqlite3
