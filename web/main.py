@@ -17,8 +17,8 @@ from duck.settings import SETTINGS
 #   PORT         — The port the server listens on. Deployment platforms often
 #                           assign this automatically via an environment variable.
 
-DEBUG  = bool(os.getenv("DEBUG", True))
-PORT   = int(os.getenv("PORT") or 8000)
+DEBUG = bool(os.getenv("DEBUG", True))
+PORT = int(os.getenv("PORT") or 8000)
 DOMAIN = os.getenv("DOMAIN", "localhost")
 
 
@@ -27,7 +27,7 @@ DOMAIN = os.getenv("DOMAIN", "localhost")
 # Keeps deployment config here rather than scattered across settings files.
 
 SETTINGS['ENABLE_HTTPS']  = 0  # Set to 1 if your server handles HTTPS directly
-SETTINGS['DEBUG']         = DEBUG
+SETTINGS['DEBUG'] = DEBUG
 SETTINGS['EXTRA_HEADERS'] = {"cache-control": "no-cache"} if DEBUG else {}
 SETTINGS['ALLOWED_HOSTS'] = [DOMAIN, f"*.{DOMAIN}"] if not DEBUG else ["*"]
 
