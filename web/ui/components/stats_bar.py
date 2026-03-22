@@ -22,6 +22,7 @@ class StatCard(FlexContainer):
             "color": "#fff",
             "letter-spacing": "-0.03em",
             "font-family": "var(--mono)",
+            "padding": "5px",
         })
 
         self.desc_label = Label(text=self.kwargs.get("label", ""))

@@ -143,6 +143,7 @@ class HomePage(BasePage):
                 "flex": "1",
                 "padding": "64px 20px 48px",
                 "gap": "0",
+                "min-height": "90vh",
             },
         )
         

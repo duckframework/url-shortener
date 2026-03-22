@@ -220,6 +220,7 @@ CSP_TRUSTED_SOURCES: dict = {
     "style-src": [
         "'self'",
         "'unsafe-inline'",  # Needed for Lively components' inline styles.
+        "https://fonts.googleapis.com",
         # Do NOT add csp_nonce_flag here if using Lively components.
         # Add CDN/style sources below, e.g. "https://fonts.googleapis.com"
     ],
@@ -229,6 +230,7 @@ CSP_TRUSTED_SOURCES: dict = {
     ],
     "font-src": [
         "'self'",
+        "https://fonts.googleapis.com",
         # Add font/CDN sources, e.g. "https://fonts.gstatic.com"
     ],
     "connect-src": [
