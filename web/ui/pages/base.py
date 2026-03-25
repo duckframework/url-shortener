@@ -281,6 +281,7 @@ class BasePage(Page):
             card="summary_large_image",
             title=self.PAGE_TITLE,
             description=self.PAGE_DESCRIPTION,
+            image=self.PAGE_IMAGE,
         )
 
         # JSON-LD structured data
