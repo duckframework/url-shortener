@@ -13,7 +13,7 @@ from duck.html.components.page import Page
 from duck.html.components.style import Style
 
 
-DUCK_HOMEPAGE = "https://duckframework.xyz"
+DUCK_HOMEPAGE = "https://duckframework.com"
 DONATE_URL = f"{DUCK_HOMEPAGE}/contribute"
 SITE_NAME = "Snip"
 SITE_AUTHOR = "Duck Framework"
@@ -226,7 +226,7 @@ class BasePage(Page):
         "No sign-up. No tracking. Pure Python — zero JavaScript."
     )
     PAGE_TYPE = "website"
-    PAGE_IMAGE = static("images/og-image.png")
+    PAGE_IMAGE = static("images/opengraph/og-image.png")
     PAGE_KEYWORDS    = [
         "url shortener", "free url shortener", "link shortener",
         "short link", "shorten url", "duck framework",
@@ -299,6 +299,7 @@ class BasePage(Page):
             "description": self.PAGE_DESCRIPTION,
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "All",
+            "image": self.PAGE_IMAGE,
             "offers": {
                 "@type": "Offer",
                 "price": "0",
