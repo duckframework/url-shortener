@@ -39,30 +39,15 @@ class HomePage(BasePage):
         Homepage JSON-LD — WebApplication with a CreateAction so Google
         understands the primary action is creating a short URL.
         """
-        return {
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Snip",
-            "url": self._page_url,
-            "description": self.PAGE_DESCRIPTION,
-            "applicationCategory": "UtilitiesApplication",
-            "operatingSystem": "All",
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD",
-            },
-            "author": {
-                "@type": "Organization",
-                "name": "Duck Framework",
-                "url": DUCK_HOMEPAGE,
-            },
+        base_json_ld = super().get_json_ld().copy()
+        base_json_ld.update({
             "potentialAction": {
                 "@type": "CreateAction",
                 "target": self._page_url,
                 "name": "Shorten a URL",
             },
-        }
+        })
+        return base_json_ld
 
     def build_page(self):
         """

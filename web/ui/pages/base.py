@@ -294,12 +294,12 @@ class BasePage(Page):
         return {
             "@context": "https://schema.org",
             "@type": "WebApplication",
-            "name": SITE_NAME,
+            "name": "Snip",
+            "image": self.PAGE_IMAGE,
             "url": self._page_url,
             "description": self.PAGE_DESCRIPTION,
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "All",
-            "image": self.PAGE_IMAGE,
             "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -311,3 +311,4 @@ class BasePage(Page):
                 "url": DUCK_HOMEPAGE,
             },
         }
+        
