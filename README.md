@@ -3,7 +3,7 @@
 > A beginner-friendly URL shortener built with **Duck Framework**.  
 > Pure Python. No JavaScript. Real-time UI powered by Lively.
 
-**[▶ Try the Live Demo](https://snip.duckframework.xyz/)**
+**[▶ Try the Live Demo](https://snip.duckframework.com/)**
 ---
 
 ## What is this?
@@ -266,10 +266,10 @@ app = App(port=8080, addr="0.0.0.0", domain="localhost")
 
 ## Built with
 
-- [Duck Framework](https://duckframework.xyz) — Python web framework with reactive UI
+- [Duck Framework](https://duckframework.com) — Python web framework with reactive UI
 - [Django ORM](https://docs.djangoproject.com/en/stable/topics/db/) — database layer only
 - SQLite — lightweight database, no setup required
 
 ---
 
-*This project is part of the Duck Framework showcase. See more at [duckframework.xyz](https://duckframework.xyz).*
+*This project is part of the Duck Framework showcase. See more at [duckframework.com](https://duckframework.com).*
